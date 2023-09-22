@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rocket-database:
+    image: postgres:latest  # Use a imagem mais recente do PostgreSQL
+    environment:
+      POSTGRES_DB: rocket  # Define o nome do banco de dados como "rocket"
+      POSTGRES_USER: rocket  # Define o nome de usuário como "rocket"
+      POSTGRES_PASSWORD: E89x7.Aisx  # Define a senha do usuário
+    ports:
+      - "5432:5432"  # Mapeie a porta do PostgreSQL para a máquina host (opcional)
